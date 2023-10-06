@@ -2,19 +2,35 @@
 <html>
     <head>
         <title>Weather App</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class="container">
+            <div class="searchBar">
+                <input type="text" name="searchBar id="searchBar" placeholder="Enter city here...">
+            </div>
 
             <div class="top">
-                <div id="title"></div>
-                <div id="date"></div>
+                <div id="title">
+                    <h3>Helsinki</h3>
+                </div>
+                <div id="date">
+                    <h3>Wednesday - 29 May</h3>
+                </div>
             </div>
 
             <div class="temperature">
-                
+                <h1>14&deg</h1>
             </div>
-            
+
+            <div class="summary">
+                <h3><span id="message">It's sun time.</span> <span id="estimate">15&deg - 7&deg</span></h3>
+            </div>
+
+            <div class="extra-info">
+                <h3><span id="wind">Wind: 29 km/h</span> <span id="precipitation">Precipitation: 0%</span></h3>
+            </div>
+
         </div>
     </body>
 </html>
