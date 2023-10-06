@@ -11,8 +11,6 @@ h1,h2,h3,p{
 }
 
 .container{
-    border: 1px solid red;
-
     width: 400px;
     height: 550px;
     padding: 40px 20px;
@@ -22,7 +20,8 @@ h1,h2,h3,p{
 }
 
 .searchBar{
-    border-bottom: 3px solid black;
+    border-bottom: 5px solid black;
+    border-radius: 2px;
     margin-bottom: 1.5em;
 }
 
