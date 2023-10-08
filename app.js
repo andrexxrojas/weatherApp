@@ -14,6 +14,10 @@ async function checkWeather(query){
     const response = await fetch(apiUrl + `&appid=${apiKey}&q=${query}`)
     var data = await response.json();
 
+    if(data.message == "city not found"){
+        return;
+    }
+
     console.log(data);
 
     //Changes to be made in HTML
@@ -38,7 +42,7 @@ async function checkWeather(query){
     sumMsg.innerText = `${data.weather[0].main}`;
 
     //Change Estimate Temperature
-    sumEst.innerText = `${Math.floor(data.main.temp_min)}° - ${Math.floor(data.main.temp_max)}°`;
+    sumEst.innerText = `${Math.min(data.main.temp_min)}° - ${Math.max(data.main.temp_max)}°`;
 
     //Change Wind Information
     windInfo.innerText = `Wind: ${Math.floor(data.wind.speed)} km/h`;
