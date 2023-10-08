@@ -18,7 +18,7 @@ async function checkWeather(query){
         return;
     }
 
-    console.log(data);
+    // console.log(data);
 
     //Changes to be made in HTML
     let cityName = document.querySelector("#title");
@@ -29,7 +29,7 @@ async function checkWeather(query){
     let windInfo = document.querySelector(".extra-info");
 
     //Change City Name
-    cityName.innerHTML = `${data.name}`;
+    cityName.innerHTML = `${data.name}, ${data.sys.country}`;
 
     //Change Date
     let now = new Date();
@@ -44,8 +44,6 @@ async function checkWeather(query){
     //Change Estimate Temperature
     sumEst.innerText = `${Math.min(data.main.temp_min)}° - ${Math.max(data.main.temp_max)}°`;
 
-    //Change Wind Information
-    windInfo.innerText = `Wind: ${Math.floor(data.wind.speed)} km/h`;
 }
 
 function dateBuilder(d){
