@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Source Sans Light";
+    src: url("SourceSansPro-Light.ttf");
+}
+
+@font-face {
+    font-family: "Source Sans Bold";
+    src: url("SourceSansPro-Bold.ttf");
+}
+
 body{
     position: absolute;
     top: 50%;
@@ -39,9 +49,9 @@ input:focus{
 }
 
 .searchBar input[type="text"]{
-    font-family: "Apercu Pro Light";
+    font-family: "Source Sans Light";
     font-weight: light;
-    font-size: 1em;
+    font-size: 16px;
     padding: 0 10px;
     margin-bottom: 1.5em;
     width: 94%;
@@ -53,30 +63,30 @@ input:focus{
 }
 
 #title h3{
-    font-family: "Apercu Pro";
+    font-family: "Source Sans Bold";
     font-weight: bold;
-    font-size: 2em;
+    font-size: 32px;
     margin-bottom: 0.5em;
 }
 
 #date h3{
-    font-family: "Apercu Pro Light";
+    font-family: "Source Sans Light";
     font-weight: light;
-    font-size: 1.2em;
+    font-size: 16px;
 }
 
 .temperature h1{
-    font-family: "Source Sans Pro";
-    font-size: 17em;
+    font-family: "Source Sans Bold";
+    font-size: 270px;
     font-weight: bold;
     line-height: 280px;
     margin-bottom: 0.1em;
 }
 
 .summary{
-    font-family: "Apercu Pro";
+    font-family: "Source Sans Bold";
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 20px;
     margin-bottom: 1.5em;
 }
 
@@ -84,12 +94,8 @@ input:focus{
     float: right;
 }
 
-#precipitation{
-    float: right;
-}
-
 .extra-info{
-    font-family: "Apercu Pro Light";
+    font-family: "Source Sans Light";
     font-weight: light;
-    font-size: 0.8em;
+    font-size: 16px;
 }
