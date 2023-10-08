@@ -18,14 +18,14 @@ async function checkWeather(query){
 
     //Changes to be made in HTML
     let cityName = document.querySelector("#title");
-    let date = document.querySelector("#date h3");
-    let temp = document.querySelector(".temperature h1");
+    let date = document.querySelector("#date");
+    let temp = document.querySelector(".temperature");
     let sumMsg = document.querySelector("#message");
     let sumEst = document.querySelector("#estimate");
-    let windInfo = document.querySelector("#wind");
+    let windInfo = document.querySelector(".extra-info");
 
     //Change City Name
-    cityName.innerText = `${data.name}`;
+    cityName.innerHTML = `${data.name}`;
 
     //Change Date
     let now = new Date();
