@@ -98,3 +98,14 @@ input:focus{
     font-family: "Source Sans Light", sans-serif;
     font-size: 16px;
 }
+
+@media (max-width: 480px){
+    /* body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    .container{
+        transform: scale(0.7);
+    }
+}
